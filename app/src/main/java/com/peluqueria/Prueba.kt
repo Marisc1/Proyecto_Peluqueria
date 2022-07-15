@@ -2,7 +2,6 @@ package com.peluqueria
 
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -12,30 +11,28 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
-import com.peluqueria.databinding.ActivityPrincipalBinding
+import com.peluqueria.databinding.ActivityPruebaBinding
 
-class Principal : AppCompatActivity() {
+class Prueba : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityPrincipalBinding
+    private lateinit var binding: ActivityPruebaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityPrincipalBinding.inflate(layoutInflater)
+        binding = ActivityPruebaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.appBarPrincipal.toolbar)
+        setSupportActionBar(binding.appBarPrueba.toolbar)
 
-        binding.appBarPrincipal.fab.setOnClickListener { view ->
+        binding.appBarPrueba.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_principal)
+        val navController = findNavController(R.id.nav_host_fragment_content_prueba)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
@@ -49,24 +46,12 @@ class Principal : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.principal, menu)
+        menuInflater.inflate(R.menu.prueba, menu)
         return true
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_principal)
+        val navController = findNavController(R.id.nav_host_fragment_content_prueba)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-    }
-
-    //Aqui se programa el boton para salir de la aplicacion
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_logoff -> {
-                Firebase.auth.signOut()
-                finish()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }

@@ -26,8 +26,12 @@ class MainActivity : AppCompatActivity() {
         FirebaseApp.initializeApp(this)
         auth = Firebase.auth
 
-        binding.btLogin.setOnClickListener { haceLogin() }
-        binding.btRegister.setOnClickListener { haceRegistro() }
+        binding.btLogin.setOnClickListener {
+            haceLogin();
+        }
+        binding.btRegister.setOnClickListener {
+            haceRegistro();
+        }
 
     }
 
