@@ -10,7 +10,7 @@
     app:cardElevation="30dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/tv_telefono"
+
         android:layout_width="match_parent"
         android:layout_height="185dp">
 

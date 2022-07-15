@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import android.widget.Toast.makeText
+import com.peluqueria.R
 import com.peluqueria.databinding.FragmentAddCitaBinding
 import com.peluqueria.databinding.FragmentCitaBinding
 import com.peluqueria.model.Cita
@@ -29,14 +30,14 @@ class AddCitaFragment : Fragment() {
     }
     private fun addCita(){
         var nombre = binding.etNombre.text.toString()
-        if (nombre.isEmpty()) //Se hace el insert de la cita
+        if (nombre.isEmpty()){ //Se hace el insert de la cita
             var correo = binding.etCorreo.text.toString()
             var telefono = binding.etTelefono.text.toString()
             var fecha = binding.etFecha.text.toString()
-        var hora = binding.etHoraCita.text.toString()
-        var estilista = binding.etEstilista.toString()
-        var monto = binding.etMonto.toString()
-        val cita = Cita(0,nombre,correo,telefono,0,hora,estilista,0)
+            var hora = binding.etHoraCita.text.toString()
+            var estilista = binding.etEstilista.toString()
+            var monto = binding.etMonto.toString()
+            val cita = Cita(0,nombre,correo,telefono,0,hora,estilista,0)
         citaViewModel.addCita(cita)
         makeText(requireContext(),"Cita agregada", LENGTH_SHORT).show()
     }else{

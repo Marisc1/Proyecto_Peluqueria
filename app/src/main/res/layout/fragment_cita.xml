@@ -7,6 +7,7 @@
     tools:context=".ui.Cita.CitaFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclador"
         android:layout_width="422dp"
         android:layout_height="728dp"
         android:layout_marginEnd="16dp"
