@@ -25,8 +25,8 @@
     <string name="msg_telefono">Telefono del cliente</string>
     <string name="msg_fecha">Fecha de la cita</string>
     <string name="msg_hora">Hora de la cita</string>
-    <string name="msg_estilista">Estilista que atiende</string>
-    <string name="msg_monto">Monto de pago</string>
+    <string name="msg_estilista">Estilista que lo atiende</string>
+    <string name="msg_monto">Monto a pagar</string>
     <string name="bt_agregar">Agregar cita</string>
     <string name="msg_imagen">Imagen</string>
 
