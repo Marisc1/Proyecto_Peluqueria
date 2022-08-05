@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cita">
+
+    <fragment
+        android:id="@+id/nav_cita"
+        android:name="com.peluqueria.ui.Cita.CitaFragment"
+        android:label="@string/menu_cita"
+        tools:layout="@layout/fragment_cita" >
+        <action
+            android:id="@+id/action_nav_cita_to_addCitaFragment"
+            app:destination="@id/addCitaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.peluqueria.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.peluqueria.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addCitaFragment"
+        android:name="com.peluqueria.ui.Cita.AddCitaFragment"
+        android:label="fragment_add_cita"
+        tools:layout="@layout/fragment_add_cita" >
+        <action
+            android:id="@+id/action_addCitaFragment_to_nav_cita"
+            app:destination="@id/nav_cita" />
+    </fragment>
+</navigation>
