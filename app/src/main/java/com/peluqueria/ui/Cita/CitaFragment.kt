@@ -4,14 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.peluqueria.R
 import com.peluqueria.databinding.FragmentCitaBinding
-import com.peluqueria.ui.CitaAdapter
+import com.peluqueria.adapter.CitaAdapter
 
 import com.peluqueria.viewmodel.CitaViewModel
 
@@ -37,7 +36,7 @@ class CitaFragment : Fragment() {
             findNavController().navigate(R.id.action_nav_cita_to_addCitaFragment)
         }
         //Se activa el RecyclerView
-        val citaAdapter=CitaAdapter()
+        val citaAdapter= CitaAdapter()
         val reciclador = binding.reciclador
         reciclador.adapter= citaAdapter
         reciclador.layoutManager= LinearLayoutManager(requireContext())

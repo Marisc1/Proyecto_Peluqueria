@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Cita.AddCitaFragment">
+    tools:context=".ui.Cita.UpdateCitaFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,11 +75,11 @@
             tools:text="@string/msg_monto" />
 
         <Button
-            android:id="@+id/bt_agregar"
+            android:id="@+id/bt_actualizar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button"
-            tools:text="@string/bt_agregar" />
+            tools:text="@string/bt_updateCita" />
 
     </LinearLayout>
 </FrameLayout>

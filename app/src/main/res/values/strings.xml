@@ -28,6 +28,7 @@
     <string name="msg_estilista">Estilista que atiende</string>
     <string name="msg_monto">Monto de pago</string>
     <string name="bt_agregar">Agregar cita</string>
+    <string name="bt_updateCita">Actualizar cita</string>
     <string name="msg_imagen">Imagen</string>
 
 </resources>
