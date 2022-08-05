@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name" translatable="false">Peluqueria</string>
     <string name="tv_signin">Registrarse</string>
     <string name="tv_correo">Correo</string>
     <string name="tv_clave">Contraseña</string>
