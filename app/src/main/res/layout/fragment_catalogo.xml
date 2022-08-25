@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.catalogo.CatalogoFragment"><![CDATA[>
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewCatalogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Servicios y Productos"
+                android:textAlignment="center"
+                android:textColor="#9C28AF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:src="@drawable/ic_scissors"
+                app:srcCompat="@drawable/corte_de_pelo__1_"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="289dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corte de cabello (caballero)"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="73dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Corte de cabello para caballero"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="108dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Estilo al gusto del cliente"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="127dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Precio: 3500 colones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="251dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:src="@drawable/ic_scissors"
+                app:srcCompat="@drawable/corte_de_pelomujer"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="185dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corte de cabello (dama)"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="185dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Corte de cabello para dama"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Estilo al gusto del cliente"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="232dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Precio: 4000 colones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="146dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:src="@drawable/ic_scissors"
+                app:srcCompat="@drawable/corte_de_pelo_ninos"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corte de cabello (niños)"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="317dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Corte de cabello para niños"
+                android:textAlignment="viewStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="289dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Estilo al gusto del cliente"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="336dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Precio: 1500 colones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:src="@drawable/ic_productos"
+                app:srcCompat="@drawable/crema"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="395dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mascarilla Capilar"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="395dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Hidrata y brinda brillo"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="642dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Linea Seytú"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="442dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Precio: 11600 colones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="461dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:src="@drawable/ic_productos"
+                app:srcCompat="@drawable/shampoo"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="614dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shampoo Color Protect"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="505dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Mantiene el tono del cabello teñido"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="423dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Linea Seytú"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="552dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Precio: 11500 colones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="571dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:src="@drawable/ic_productos"
+                app:srcCompat="@drawable/acondicionador"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="503dp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acondicionador con Extractos Herbales"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="614dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Brinda vitalidad, brillo y suavidad"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="533dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Linea Seytú"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="661dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Precio: 7700 colones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="680dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

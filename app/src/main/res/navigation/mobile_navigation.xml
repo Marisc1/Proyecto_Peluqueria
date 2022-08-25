@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cita">
+
+    <fragment
+        android:id="@+id/nav_cita"
+        android:name="com.peluqueria.ui.Cita.CitaFragment"
+        android:label="@string/menu_cita"
+        tools:layout="@layout/fragment_cita" >
+        <action
+            android:id="@+id/action_nav_cita_to_addCitaFragment"
+            app:destination="@id/addCitaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_catalogo"
+        android:name="com.peluqueria.ui.catalogo.CatalogoFragment"
+        android:label="@string/menu_catalogo"
+        tools:layout="@layout/fragment_catalogo" />
+
+    <fragment
+        android:id="@+id/nav_ubicacion"
+        android:name="com.peluqueria.ui.ubicacion.UbicacionFragment"
+        android:label="@string/menu_ubicacion"
+        tools:layout="@layout/fragment_ubicacion" >
+        <action
+            android:id="@+id/action_nav_ubicacion_to_addUbicacionFragment"
+            app:destination="@id/addUbicacionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCitaFragment"
+        android:name="com.peluqueria.ui.Cita.AddCitaFragment"
+        android:label="fragment_add_cita"
+        tools:layout="@layout/fragment_add_cita" >
+        <action
+            android:id="@+id/action_addCitaFragment_to_nav_cita"
+            app:destination="@id/nav_cita" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUbicacionFragment"
+        android:name="com.peluqueria.ui.ubicacion.AddUbicacionFragment"
+        android:label="fragment_add_ubicacion"
+        tools:layout="@layout/fragment_add_ubicacion" >
+        <action
+            android:id="@+id/action_addUbicacionFragment_to_nav_ubicacion"
+            app:destination="@id/nav_ubicacion" />
+    </fragment>
+</navigation>
