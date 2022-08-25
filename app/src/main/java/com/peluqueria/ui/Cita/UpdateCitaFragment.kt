@@ -66,7 +66,7 @@ class UpdateCitaFragment : Fragment() {
             citaViewModel.updateCita(cita)
 
             Toast.makeText(requireContext(),getString(R.string.msg_cita_added),Toast.LENGTH_LONG).show()
-            findNavController().navigate(R.id.action_updateCitaFragment_to_nav_cita)
+            findNavController().navigate(R.id.action_updateCitaFragment_to_mainActivity)
         }else{ // Mensaje de error
             Toast.makeText(requireContext(),getString(R.string.msg_data),Toast.LENGTH_SHORT).show()
         }

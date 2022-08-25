@@ -56,11 +56,16 @@
         android:name="com.peluqueria.ui.Cita.UpdateCitaFragment"
         android:label="@string/bt_updateCita"
         tools:layout="@layout/fragment_update_cita" >
-        <action
-            android:id="@+id/action_updateCitaFragment_to_nav_cita"
-            app:destination="@id/nav_cita" />
         <argument
             android:name="cita"
             app:argType="com.peluqueria.model.Cita" />
+        <action
+            android:id="@+id/action_updateCitaFragment_to_mainActivity"
+            app:destination="@id/pagoActivity" />
     </fragment>
+    <activity
+        android:id="@+id/pagoActivity"
+        android:name="com.peluqueria.MainActivity"
+        android:label="activity_pago"
+        tools:layout="@layout/activity_pago" />
 </navigation>

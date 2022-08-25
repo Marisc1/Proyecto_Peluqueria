@@ -6,6 +6,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.peluqueria.databinding.CitaFilaBinding
 import com.peluqueria.model.Cita
+import com.peluqueria.ui.Cita.CitaFragmentDirections
 
 class CitaAdapter : RecyclerView.Adapter<CitaAdapter.CitaViewHolder>() {
 
@@ -24,7 +25,7 @@ class CitaAdapter : RecyclerView.Adapter<CitaAdapter.CitaViewHolder>() {
         itemBinding.tvMonto.text = cita.telefono
         itemBinding.vistaFila.setOnClickListener {
             val accion= CitaFragmentDirections
-                .actionNavLugarToUpdateCitaFragment(cita)
+                .actionNavCitaToUpdateCitaFragment(cita)
             itemView.findNavController().navigate(accion)
         }
 
