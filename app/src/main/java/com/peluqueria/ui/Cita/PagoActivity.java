@@ -42,7 +42,7 @@ public class PagoActivity extends AppCompatActivity {
 
 
         //initialising default value
-        name.setText("RAJENDRA SINGH BISHT");
+        name.setText("Barquero Lopez Christian");
         upiId.setText("7409484009@kotak");
         note.setText("donation");
         amount.setText("10");
