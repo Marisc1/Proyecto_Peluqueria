@@ -10,23 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModelProvider
-<<<<<<< HEAD
 import androidx.navigation.fragment.findNavController
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.StorageReference
-import com.google.firebase.storage.ktx.storage
 import com.peluqueria.R
 import com.peluqueria.databinding.FragmentAddUbicacionBinding
 import com.peluqueria.databinding.FragmentUbicacionBinding
 import com.peluqueria.model.Ubicacion
-=======
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
-import com.peluqueria.databinding.FragmentAddUbicacionBinding
->>>>>>> origin/Master
+
 import com.peluqueria.viewmodel.UbicacionViewModel
 
 class AddUbicacionFragment : Fragment() {
